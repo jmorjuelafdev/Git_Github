@@ -1,0 +1,26 @@
+Resumen de Comandos de Git:
+
+- git init: Inicializa un repositorio en el directorio actual.
+- git add <archivo>: Prepara un archivo para ser confirmado.
+- git commit -m "mensaje": Realiza un commit con el mensaje proporcionado.
+- git push: Sube los cambios confirmados al repositorio remoto.
+- git pull: Obtiene los últimos cambios del repositorio remoto.
+- git status: Muestra el estado actual del repositorio.
+
+Flujos de Trabajo:
+1. Flujo Básico:
+   - Modificar archivos.
+   - Preparar cambios: git add archivo.txt.
+   - Confirmar cambios: git commit -m "Descripción de los cambios".
+   - Subir cambios: git push origin main.
+
+2. Flujo Gitflow:
+   - Crear una nueva rama de característica: git checkout -b feature/nueva-funcionalidad.
+   - Finalizar la característica y hacer merge: git checkout main, git merge feature/nueva-funcionalidad.
+
+Consejos útiles:
+- Usa git stash para guardar cambios sin confirmarlos.
+- Para deshacer el último commit sin borrar los cambios: git reset --soft HEAD~1.
+
+Recursos:
+- Documentación oficial de Git: https://git-scm.com/doc
