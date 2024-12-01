@@ -69,8 +69,8 @@ GitHub es una plataforma de desarrollo colaborativo basada en la web que permite
 GitHub sirve principalmente para:
 
 - **Almacenamiento de código fuente**: Puedes almacenar y organizar tu código en repositorios de forma remota.
-- **Control de versiones: Permite seguir**: y registrar el historial de cambios en los archivos, lo que   facilita la colaboración y la gestión de proyectos a largo plazo.
--**Colaboración: Permite que varios**: desarrolladores trabajen juntos en el mismo proyecto, gestionando las diferentes versiones y evitando conflictos de código mediante herramientas como ramas (branches), pull requests y revisiones.
+- **Control de versiones:**: Permite seguir y registrar el historial de cambios en los archivos, lo que facilita la colaboración y la gestión de proyectos a largo plazo.
+- **Colaboración**: Permite que varios desarrolladores trabajen juntos en el mismo proyecto, gestionando las diferentes versiones y evitando conflictos de código mediante herramientas como ramas (branches), pull requests y revisiones.
 - **Documentación**: Puedes agregar documentación en archivos como README.md para explicar el proyecto, su uso y su instalación.
 **Control de calidad**: GitHub incluye herramientas como GitHub Actions, que permiten automatizar procesos como la ejecución de pruebas o la implementación del código.
 
@@ -83,8 +83,7 @@ GitHub sirve principalmente para:
 
 Para trabajar con un repositorio remoto en GitHub:
 
-3. **Conectar un repositorio local a GitHub**:
-Agrega el repositorio remoto a tu proyecto local con:
+3. **Conectar un repositorio local a GitHub**: Agrega el repositorio remoto a tu proyecto local con:
    git remote add origin <URL-del-repositorio>
 Ejemplo:
    `git remote add origin https://github.com/usuario/repositorio.git`
@@ -165,47 +164,46 @@ Habilita GitHub Pages en la configuración del repositorio y selecciona la rama 
 
 Soluciones a problemas comunes con Git:
 
-Deshacer cambios en un archivo (sin eliminar el archivo localmente)
-
-1. Si has realizado cambios en un archivo que aún no has confirmado (commit) y deseas revertirlos a su último estado confirmado, puedes usar. Este comando revertirá los cambios no confirmados en el archivo a la versión más reciente en el repositorio:
+1.**Deshacer cambios en un archivo (sin eliminar el archivo localmente)**: Si has realizado cambios en un archivo que aún no has confirmado (commit) y deseas revertirlos a su último estado confirmado, puedes usar. Este comando revertirá los cambios no confirmados en el archivo a la versión más reciente en el repositorio:
 
 `git checkout -- archivo.txt`
 
-2. Deshacer el último commit (pero conservar los cambios en el área de trabajo). Si cometiste un error en el último commit, puedes deshacerlo sin perder los cambios con:
+2.**Deshacer el último commit (pero conservar los cambios en el área de trabajo)**: Si cometiste un error en el último commit, puedes deshacerlo sin perder los cambios con:
 
 `git reset --soft HEAD~1`
 
-3. Eliminar el último commit (y también los cambios). Si deseas eliminar tanto el commit como los cambios realizados, puedes usar:
+3.**Eliminar el último commit (y también los cambios)**: Si deseas eliminar tanto el commit como los cambios realizados, puedes usar:
 
 `git reset --hard HEAD~1`
 
 Este comando eliminará tanto el commit como cualquier cambio que hayas hecho, así que ten cuidado.
 
-4. Recuperar un archivo borrado (sin necesidad de hacer commit). Si accidentalmente eliminaste un archivo y deseas recuperarlo desde el último commit, puedes usar:
+4.**Recuperar un archivo borrado (sin necesidad de hacer commit)**: Si accidentalmente eliminaste un archivo y deseas recuperarlo desde el último commit, puedes usar:
 
 `git checkout <hash_del_commit> -- <archivo>`
 
 Esto recupera el archivo del historial sin necesidad de realizar un commit adicional.
 
-5. Volver a un commit anterior (sin eliminar cambios posteriores). Si necesitas deshacer todos los cambios realizados después de un commit específico pero sin perder esos cambios localmente, usa:
+5.**Volver a un commit anterior (sin eliminar cambios posteriores)**: Si necesitas deshacer todos los cambios realizados después de un commit específico pero sin perder esos cambios localmente, usa:
 
 `git reset --mixed <hash_del_commit>`
 
 Esto mueve la cabeza del repositorio al commit especificado pero mantiene los cambios en el área de trabajo.
 
-6. Restaurar todos los archivos a su estado más reciente. Si deseas restaurar todos los archivos de tu repositorio al estado más reciente confirmado (desde el último commit), puedes usar:
+6. **Restaurar todos los archivos a su estado más reciente**: Si deseas restaurar todos los archivos de tu repositorio al estado más reciente confirmado (desde el último commit),
+   puedes usar:
 
 `git reset --hard HEAD`
 
 Este comando restaura todos los archivos a la última versión confirmada, eliminando cualquier cambio no confirmado.
 
-7. Ver el historial de commits de forma simplificada. Si necesitas ver un historial de los commits de manera compacta, puedes usar:
+7.**Ver el historial de commits de forma simplificada**: Si necesitas ver un historial de los commits de manera compacta, puedes usar:
 
 `git log --oneline`
 
 Muestra un historial de commits con una sola línea por cada commit, mostrando el hash corto y el mensaje del commit.
 
-8. Forzar un push (evitar conflictos con el repositorio remoto). Si has hecho un git reset o manipulado el historial y necesitas actualizar el repositorio remoto de manera forzada, puedes usar:
+8.** Forzar un push (evitar conflictos con el repositorio remoto)**: Si has hecho un git reset o manipulado el historial y necesitas actualizar el repositorio remoto de manera forzada, puedes usar:
 
 `git push --force`
 
