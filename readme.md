@@ -1,8 +1,11 @@
 # Git y GitHub
 
 Por: Johanna Marcela Orjuela Flórez
+
 Curso profesional de Git y Github en Platzi
+
 Proyecto final
+
 2024
 
 ## 1. Introducción a Git
