@@ -237,7 +237,7 @@ Usa .gitignore: Crea este archivo para ignorar elementos no deseados, como:
 
 
 ## 11. Recursos adicionales
-- [Archivo con resumen detallado de comandos y conceptos: Resumen de comandos Git](./resumen.txt)
+- [Archivo con resumen detallado de comandos y conceptos: Resumen de comandos Git](./glosario.txt)
 - [Documentación oficial de Git: Git Docs](https://git-scm.com/doc)
 - [Guías de GitHub: GitHub Guides](https://guides.github.com/)
 
