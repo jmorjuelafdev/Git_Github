@@ -1,0 +1,78 @@
+Glosario de Términos: Git y GitHub
+1. Repositorio (Repository):
+Un repositorio es un contenedor donde se almacenan todos los archivos y el historial de cambios de un proyecto. Puede ser local (en tu computadora) o remoto (en plataformas como GitHub).
+
+2. Commit:
+Un commit es un registro de los cambios realizados en el código fuente del proyecto. Cada commit tiene un mensaje que describe las modificaciones hechas.
+
+3. Branch (Rama):
+Una rama es una versión paralela del proyecto. Permite realizar cambios y experimentos sin afectar la rama principal (main o master).
+
+4. Merge:
+El merge es el proceso de combinar dos ramas de un repositorio. Generalmente se realiza para incorporar los cambios de una rama de características a la rama principal.
+
+5. Pull Request (PR):
+Es una solicitud para que los cambios de una rama se integren en otra. Usualmente se usa cuando se trabaja en proyectos colaborativos, permitiendo que otros revisen y aprueben los cambios antes de fusionarlos.
+
+6. Clone:
+El comando git clone se usa para crear una copia local de un repositorio remoto. Es común usarlo para descargar un proyecto de GitHub a tu máquina local.
+
+7. Fork:
+Un fork es una copia de un repositorio que se crea en tu propia cuenta de GitHub. Permite realizar cambios sin afectar el proyecto original.
+
+8. Remote:
+Un repositorio remoto es aquel que está alojado en una plataforma externa, como GitHub. Los comandos git push y git pull se usan para interactuar con repositorios remotos.
+
+9. Staging Area (Área de Preparación):
+Es el área donde colocas los archivos que deseas incluir en el próximo commit. Se usa el comando git add para mover los archivos a la zona de preparación.
+
+10. HEAD:
+HEAD es un puntero que señala al commit actual en tu rama. Cuando trabajas en Git, HEAD apunta a la última confirmación que hiciste.
+
+11. GitHub Pages:
+GitHub Pages es una característica de GitHub que permite alojar sitios web directamente desde un repositorio de GitHub, comúnmente utilizado para documentar proyectos o crear páginas personales.
+
+12. .gitignore:
+Es un archivo en el que se especifican los archivos o directorios que no deben ser rastreados por Git, como archivos temporales, configuraciones locales, o dependencias externas.
+
+13. Rebase:
+Rebase es un comando utilizado para integrar cambios de una rama en otra. A diferencia del merge, rebase reescribe el historial de commits de la rama, lo que puede ser útil para mantener un historial limpio.
+
+14. Conflict (Conflicto):
+Un conflicto ocurre cuando Git no puede fusionar automáticamente dos ramas debido a cambios incompatibles. Los conflictos deben resolverse manualmente antes de poder completar el merge.
+
+15. Pull:
+El comando git pull obtiene los últimos cambios de un repositorio remoto y los incorpora a tu rama local. Es útil para mantener tu repositorio local actualizado.
+
+16. Push:
+git push se usa para enviar tus cambios locales a un repositorio remoto, actualizando el proyecto en GitHub o en otro servicio de alojamiento de Git.
+
+17. Origin:
+"Origin" es el nombre predeterminado que Git usa para referirse al repositorio remoto original. Cuando usas git push origin main, estás enviando tus cambios a la rama main en el repositorio remoto.
+
+18. Gitflow:
+Gitflow es un flujo de trabajo basado en Git que organiza las ramas de manera estructurada, facilitando el desarrollo de nuevas características, lanzamientos y correcciones de errores en proyectos grandes.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
